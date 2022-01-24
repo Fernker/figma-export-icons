@@ -4,7 +4,8 @@ const defaults = {
   frame: 'Icons',
   iconsPath: 'assets/svg/icons',
   removeFromName: 'Icon=',
-  exportVariants: false
+  exportVariants: false,
+  maxConcurrentConnections: 500
 }
 
 module.exports = defaults

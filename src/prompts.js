@@ -38,6 +38,14 @@ const prompts = [
     initial: defaults.exportVariants,
     active: 'yes',
     inactive: 'no'
+  },
+  {
+    type: 'number',
+    name: 'maxConcurrentConnections',
+    message: 'Maximum amount of concurrent S3 connections',
+    initial: defaults.maxConcurrentConnections,
+    min: 1,
+    max: 1000
   }
 ]
 
