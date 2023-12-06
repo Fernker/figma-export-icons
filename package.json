@@ -1,6 +1,6 @@
 {
   "name": "@Fernker/figma-export-icons",
-  "version": "0.0.0",
+  "version": "0.0.8",
   "description": "Script to generate and download icons from a figma file",
   "bin": {
     "export-icons": "cli.js"
