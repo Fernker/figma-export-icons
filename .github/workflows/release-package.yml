@@ -24,7 +24,8 @@ jobs:
       #     # replace: "0.0.10"
       #     regex: false
       #     include: "package.json"
-      # - run: npm ci
+      - run: npm ci
+      - run: npm version patch
       # - run: npm publish
       #   env:
       #     NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
