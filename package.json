@@ -1,5 +1,5 @@
 {
-  "name": "figma-export-icons",
+  "name": "@fernker/figma-export-icons",
   "version": "0.0.0",
   "description": "Script to generate and download icons from a figma file",
   "bin": {
