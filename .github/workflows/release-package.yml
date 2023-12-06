@@ -15,6 +15,14 @@ jobs:
           node-version: 16
           registry-url: 'https://npm.pkg.github.com'
           scope: '@Fernker'
+      - name: stamp version number
+        if: github.event_name == 'release'
+        uses: jacobtomlinson/gha-find-replace@v3
+        with:
+          find: "0.0.0"
+          replace: "${{ github.event.release.tag_name }}"
+          regex: false
+          include: "package.json"
       - run: npm ci
       - run: npm publish
         env:
