@@ -28,6 +28,14 @@ Added support for an env variable set to `FIGMA_PERSONAL_TOKEN` so that the conf
 
 env variable `FIGMA_PERSONAL_TOKEN`
 
+### skipIgnore command line argument
+
+By default the script will add the config file to the `.gitignore` file. This gives users of this script to have final say on security risks. When paired with an env variable Figma token this should be turned off.
+
+command line arg `--skip-ignore`
+
+---
+
 example config file:
 
 ```json
