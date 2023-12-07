@@ -45,6 +45,12 @@ function getConfig() {
     const configFile = path.resolve(argv.config || defaults.configFileName);
     if (fs.existsSync(configFile)) {
       config = JSON.parse(fs.readFileSync(configFile, "utf-8"));
+
+      // If there is no figmaToken defined in config, check for existence of env variable first
+      if (!config.figmaPersonalToken && process.env.FIGMA_PERSONAL_TOKEN) {
+        config.figmaPersonalToken = process.env.FIGMA_PERSONAL_TOKEN;
+      }
+
       const missingConfig = promptsList.filter((q) => !config[q.name]);
 
       // If we have frames defined we can remove frame from the missingConfig
