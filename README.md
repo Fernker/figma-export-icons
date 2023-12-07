@@ -22,6 +22,12 @@ The config `frame` option only allows a single-frame to be defined. You can opti
 
 config property: `frames`
 
+### figmaPersonalToken env variable
+
+Added support for an env variable set to `FIGMA_PERSONAL_TOKEN` so that the config file can be committed without it.
+
+env variable `FIGMA_PERSONAL_TOKEN`
+
 example config file:
 
 ```json
