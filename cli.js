@@ -441,7 +441,11 @@ function exportIcons() {
 }
 
 function run() {
-  updateGitIgnore();
+  // Optionally allow the gitIgnore to be skipped
+  // this allows consumers to have final say on security risk
+  if (!argv["skip-ignore"]) {
+    updateGitIgnore();
+  }
   if (argv.c) {
     deleteConfig();
   }
