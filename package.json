@@ -1,6 +1,6 @@
 {
   "name": "@Fernker/figma-export-icons",
-  "version": "1.8.0",
+  "version": "1.8.1",
   "description": "Script to generate and download icons from a figma file",
   "bin": {
     "export-icons": "cli.js"
@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/tsimenis/figma-export-icons#readme",
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^1.6.5",
     "chalk": "^2.4.2",
     "cliui": "^5.0.0",
     "minimist": "^1.2.5",
